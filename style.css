@@ -383,6 +383,23 @@ footer a:hover {
     color: var(--accent-cyan);
 }
 
+/* Keep charge codes on a single line, left-aligned, sized to their
+   content, regardless of screen size */
+#chargeTableBody td:first-child,
+#selectedChargeTableBody td:nth-child(2) {
+    width: 1%;
+    white-space: nowrap;
+    text-align: left;
+}
+
+#charge-code-data,
+#arrest-command {
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    line-height: 1.35;
+}
+
 #arrest-command {
     color: var(--text-primary);
     background: var(--bg-void);
@@ -500,9 +517,8 @@ footer a:hover {
 }
 
 #chargeTable th:first-child {
-    width: 70px;
-    min-width: 70px;
-    max-width: 70px;
+    width: 1%;
+    white-space: nowrap;
 }
 
 .input {
