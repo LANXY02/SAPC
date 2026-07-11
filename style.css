@@ -387,9 +387,10 @@ footer a:hover {
    content, regardless of screen size */
 #chargeTableBody td:first-child,
 #selectedChargeTableBody td:nth-child(2) {
-    width: 1%;
-    white-space: nowrap;
-    text-align: left;
+    width: 1% !important;
+    white-space: nowrap !important;
+    text-align: left !important;
+    vertical-align: middle !important;
 }
 
 #charge-code-data,
@@ -517,8 +518,8 @@ footer a:hover {
 }
 
 #chargeTable th:first-child {
-    width: 1%;
-    white-space: nowrap;
+    width: 1% !important;
+    white-space: nowrap !important;
 }
 
 .input {
