@@ -384,6 +384,7 @@ function splitChargeCode(input) {
         if (partALastDotIndex !== -1) {
             partA = partA.substring(0, partALastDotIndex) + partA.substring(partALastDotIndex + 1);
         }
+        partA = partA.replace(/\s+(\d+)$/, '$1');
         return { Code: partA, Charge: partB };
     } else {
         return { Code: '', Charge: input.trim() };
